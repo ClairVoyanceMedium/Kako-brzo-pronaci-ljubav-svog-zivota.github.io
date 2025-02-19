@@ -1,42 +1,114 @@
-# Indique aux robots que toutes les pages peuvent être explorées, sauf restrictions spécifiées
 User-agent: *
 Disallow: /admin/
-Disallow: /tmp/
-Disallow: /private/
+Disallow: /login/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /search?
+Disallow: /user-profile/
+Disallow: /temp/
+Disallow: /debug/
+Disallow: /old-content/
+Disallow: /*?sort=
+Disallow: /*?filter=
 
-# Bloquer des URL avec paramètres inutiles pour l'indexation
-Disallow: /*?debug=true
-Disallow: /*?preview=true
+# Mobile-first indexing
+User-agent: Googlebot
+Allow: /*
+User-agent: Googlebot-Mobile
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+User-agent: Googlebot-Video
+Allow: /
+User-agent: Googlebot-News
+Allow: /
 
-# Permettre les fichiers nécessaires au bon affichage et fonctionnement
-Allow: /css/
-Allow: /js/
-Allow: /images/
+# Sitemap declaration
+Sitemap: https://clairvoyancemedium.github.io/Kako-brzo-pronaci-ljubav-svog-zivota.github.io/sitemap.xml
 
-# Référencement des ressources multimédias
-Allow: *.png
-Allow: *.jpg
-Allow: *.webp
-Allow: *.css
-Allow: *.js
+# AI and Voice Search Optimization
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: GeminiBot
+Allow: /
+User-agent: BingBot
+Allow: /
+User-agent: Applebot
+Allow: /
 
-# Fournir le chemin du fichier sitemap pour une meilleure indexation
-Sitemap: https://www.clairvoyancemedium.com/sitemap.xml
+# Fast indexing & crawling rules
+Crawl-delay: 1
+User-agent: Googlebot
+Crawl-delay: 2
+User-agent: Bingbot
+Crawl-delay: 5
+User-agent: GPTBot
+Crawl-delay: 3
+Request-rate: 1/1s
 
-# Autorisation pour les robots Google et Bing pour maximiser les campagnes publicitaires
+# Ensure visibility in Google Discover & Google News
+User-agent: Googlebot-News
+Allow: /
+
+# Prevent duplicate content
+Disallow: /*?sessionid=
+Disallow: /*?tracking=
+Disallow: /*&ref=
+
+# Optimize for featured snippets and rich results
 User-agent: Googlebot
 Allow: /
-User-agent: AdsBot-Google
+Disallow: /*?print=
+Disallow: /*?mode=
+Disallow: /*?preview=
+
+# Prevent crawling of dynamically generated URLs
+Disallow: /*?sort=
+Disallow: /*?price=
+Disallow: /*?view=
+
+# Image & Video Optimization
+User-agent: Googlebot-Image
 Allow: /
-User-agent: Bingbot
+User-agent: Googlebot-Video
 Allow: /
 
-# Bloquer les robots nuisibles ou non désirés
-User-agent: BadBot
+# Social Media Bots
+User-agent: Twitterbot
+Allow: /
+User-agent: FacebookBot
+Allow: /
+
+# No restrictions for popular voice assistants
+User-agent: Amazonbot
+Allow: /
+User-agent: AlexaMedia
+Allow: /
+User-agent: SiriBot
+Allow: /
+
+# Allow indexing of important assets
+Allow: /*.css
+Allow: /*.js
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.svg
+Allow: /*.webp
+Allow: /*.mp4
+Allow: /*.webm
+
+# Restrict bad bots
+User-agent: SemrushBot
 Disallow: /
-User-agent: EvilScraper
+User-agent: AhrefsBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+User-agent: DotBot
+Disallow: /
+User-agent: BLEXBot
 Disallow: /
 
-# Empêcher l'exploration des fichiers sensibles
-Disallow: /config/
-Disallow: /backup/
+# End of robots.txt
