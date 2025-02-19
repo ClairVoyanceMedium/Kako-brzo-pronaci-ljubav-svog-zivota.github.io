@@ -1,50 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Homepage -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+    
+    <!-- Standard Pages -->
     <url>
-        <loc>https://clairvoyancemedium.github.io/CN-fast-and-reliable-email-psychic-reading.github.io/</loc>
-        <lastmod>2025-01-21</lastmod>
-        <changefreq>daily</changefreq>
+        <loc>https://clairvoyancemedium.github.io/Kako-brzo-pronaci-ljubav-svog-zivota.github.io/</loc>
+        <lastmod>2025-02-19</lastmod>
         <priority>1.0</priority>
     </url>
-
-    <!-- Pricing Page -->
     <url>
-        <loc>https://clairvoyancemedium.github.io/CN-fast-and-reliable-email-psychic-reading.github.io/pricing</loc>
-        <lastmod>2025-01-21</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://clairvoyancemedium.github.io/Kako-brzo-pronaci-ljubav-svog-zivota.github.io/about</loc>
+        <lastmod>2025-02-19</lastmod>
         <priority>0.8</priority>
     </url>
-
-    <!-- FAQ Page -->
+    
+    <!-- Image Sitemap -->
     <url>
-        <loc>https://clairvoyancemedium.github.io/CN-fast-and-reliable-email-psychic-reading.github.io/faq</loc>
-        <lastmod>2025-01-21</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <loc>https://clairvoyancemedium.github.io/Kako-brzo-pronaci-ljubav-svog-zivota.github.io/images</loc>
+        <image:image>
+            <image:title>Glavna slika rituala ljubavi</image:title>
+            <image:caption>Vizualni prikaz energetske povezanosti kroz rituale ljubavi.</image:caption>
+            <image:license>https://clairvoyancemedium.github.io/license</image:license>
+            <image:loc>https://clairvoyancemedium.github.io/Kako-brzo-pronaci-ljubav-svog-zivota.github.io/images/main-image.jpg</image:loc>
+        </image:image>
     </url>
-
-    <!-- Blog Section -->
+    
+    <!-- Video Sitemap -->
     <url>
-        <loc>https://clairvoyancemedium.github.io/CN-fast-and-reliable-email-psychic-reading.github.io/blog</loc>
-        <lastmod>2025-01-21</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <loc>https://clairvoyancemedium.github.io/Kako-brzo-pronaci-ljubav-svog-zivota.github.io/videos</loc>
+        <video:video>
+            <video:title>Kako rituali mogu pomoći u ljubavnom životu</video:title>
+            <video:description>Ovaj video objašnjava kako energetski rituali mogu utjecati na ljubavne odnose.</video:description>
+            <video:duration>180</video:duration>
+            <video:expiration_date>2026-12-31</video:expiration_date>
+            <video:tag>ritual ljubavi</video:tag>
+            <video:tag>energetski balans</video:tag>
+            <video:tag>duhovno povezivanje</video:tag>
+            <video:license>https://clairvoyancemedium.github.io/license</video:license>
+            <video:content_loc>https://clairvoyancemedium.github.io/Kako-brzo-pronaci-ljubav-svog-zivota.github.io/videos/main-video.mp4</video:content_loc>
+        </video:video>
     </url>
-
-    <!-- Individual Blog Post Example -->
+    
+    <!-- Google News Sitemap -->
     <url>
-        <loc>https://clairvoyancemedium.github.io/CN-fast-and-reliable-email-psychic-reading.github.io/blog/article1</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <!-- Contact Page -->
-    <url>
-        <loc>https://clairvoyancemedium.github.io/CN-fast-and-reliable-email-psychic-reading.github.io/contact</loc>
-        <lastmod>2025-01-21</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <loc>https://clairvoyancemedium.github.io/Kako-brzo-pronaci-ljubav-svog-zivota.github.io/news</loc>
+        <news:news>
+    <news:publication>
+        <news:name>Clairvoyance Medium News</news:name>
+        <news:language>hr</news:language>
+    </news:publication>
+    <news:publication_date>2025-02-19</news:publication_date>
+    <news:title>Kako brzo pronaći ljubav svog života?</news:title>
+    <news:keywords>ljubav, rituali, duhovnost, emocije, privlačnost</news:keywords>
+</news:news>
+            <news:keywords>ljubav, rituali, duhovnost, emocije, privlačnost</news:keywords>
+            <news:publication>
+                <news:name>Clairvoyance Medium News</news:name>
+                <news:language>hr</news:language>
+            </news:publication>
+            <news:publication_date>2025-02-19</news:publication_date>
+            <news:title>Kako brzo pronaći ljubav svog života?</news:title>
+        </news:news>
     </url>
 </urlset>
